@@ -8,5 +8,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ./run.sh
+    - run: ${{ github.action_path }}/run.sh
       shell: bash
