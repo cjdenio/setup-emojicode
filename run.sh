@@ -1,15 +1,17 @@
 #!/bin/bash
 
-if [[ $OSTYPE == "linux_gnu" ]]
+if [[ $OSTYPE = "linux-gnu" ]]
 then
-  INSTALL_OS = "Linux"
-elif [[ $OSTYPE == "darwin" ]]
+  INSTALL_OS="Linux"
+elif [[ $OSTYPE = "darwin" ]]
 then
-  INSTALL_OS = "Darwin"
+  INSTALL_OS="Darwin"
 else
   echo "Invalid OS :("
-  return 1
+  exit 1
 fi
+
+exit
 
 curl -o emojicode.tar.gz -L "https://github.com/emojicode/emojicode/releases/download/v$INPUT_VERSION/Emojicode-$INPUT_VERSION-$INSTALL_OS-x86_64.tar.gz"
 tar -xzf emojicode.tar.gz && rm emojicode.tar.gz
