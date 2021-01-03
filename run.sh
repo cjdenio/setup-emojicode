@@ -7,7 +7,7 @@ elif [[ $OSTYPE = "darwin" ]]
 then
   INSTALL_OS="Darwin"
 else
-  echo "Invalid OS :("
+  echo "Invalid OS: $OSTYPE 😢"
   exit 1
 fi
 
