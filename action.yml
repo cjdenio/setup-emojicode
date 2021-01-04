@@ -2,7 +2,7 @@ name: 'setup-emojicode'
 description: 'Set up an Emojicode compiler on GitHub Actions'
 author: 'Caleb Denio'
 branding:
-  icon: smile
+  icon: settings
   color: yellow
 inputs:
   version:
