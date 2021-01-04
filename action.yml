@@ -1,5 +1,9 @@
-name: 'Setup Emojicode'
+name: 'setup-emojicode'
 description: 'Set up an Emojicode compiler on GitHub Actions'
+author: 'Caleb Denio'
+branding:
+  icon: smile
+  color: yellow
 inputs:
   version:
     description: 'Emojicode version to download'
